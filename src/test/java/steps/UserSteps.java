@@ -12,8 +12,8 @@ import java.util.Map;
 
 public class UserSteps {
 
-    @Given("que tenho os dados do usuario para cadastro:")
-    public void queTenhoOsDadosDoUsuarioParaCadastro(Map<String,Object> map) {
+    @Given("que tenho os dados do usuario:")
+    public void queTenhoOsDadosDoUsuario(Map<String,Object> map) {
         UserMaps.initUser();
         UserMaps.getUsuario().putAll(map);
     }
@@ -44,6 +44,10 @@ public class UserSteps {
     @Then("verifico se esta retornando {int} na requisicao da API")
     public void verificoSeEstaRetornandoNaRequisicaoDaAPI(int statusCode) {
         Assert.assertEquals(statusCode, Utils.getResponse().statusCode());
-        System.out.println(Utils.getResponse().jsonPath().get().toString());
+    }
+
+    @When("faco uma requisicao com o metodo GET para um usuario")
+    public void facoUmaRequisicaoComOMetodoGETParaUmUsuario() {
+        Utils.get("user/login",ContentType.JSON,UserMaps.getUsuario());
     }
 }

@@ -3,6 +3,8 @@ package utils;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 
+import java.util.Map;
+
 import static io.restassured.RestAssured.baseURI;
 import static io.restassured.RestAssured.given;
 
@@ -40,6 +42,16 @@ public class Utils {
                 .contentType(type)
                 .body(corpo)
                 .when().put(endpoint)
+                .thenReturn();
+    }
+
+    public static Response get(String endpoint, ContentType type, Map<String, Object> params){
+        return response = given()
+                .relaxedHTTPSValidation()
+                .contentType(type)
+                .params(params)
+                .log().all()
+                .when().get(endpoint)
                 .thenReturn();
     }
 }
