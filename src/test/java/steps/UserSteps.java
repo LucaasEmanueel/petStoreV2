@@ -12,18 +12,38 @@ import java.util.Map;
 
 public class UserSteps {
 
-    @Given("que tenho os dados do usuario para cadastro")
-    public void queTenhoOsDadosDoUsuarioParaCadastro() {
+    @Given("que tenho os dados do usuario para cadastro:")
+    public void queTenhoOsDadosDoUsuarioParaCadastro(Map<String,Object> map) {
         UserMaps.initUser();
+        UserMaps.getUsuario().putAll(map);
     }
 
-    @When("que faco a requisicao com o metodo POST")
-    public void queFacoARequisicaoComOMetodoPOST() {
-        Utils.post(UserMaps.getUsuario(),"user", ContentType.JSON);
+    @Given("que tenho os dados do usuario para cadastro invalido:")
+    public void queTenhoOsDadosDoUsuarioInvalidosParaCadastro(Map<String, String> map) {
+        UserMaps.initUserInvalido();
+        UserMaps.getUsuarioInvalido().putAll(map);
+    }
+
+    @When("que faco a requisicao com o metodo POST de um usuario {string}")
+    public void queFacoARequisicaoComOMetodoPOST(String user) {
+
+        switch (user){
+            case "valido":
+                Utils.post(UserMaps.getUsuario(),"user", ContentType.JSON);
+                break;
+            case "invalido":
+                Utils.post(UserMaps.getUsuarioInvalido(),"user", ContentType.JSON);
+        }
+    }
+
+    @When("faco a requisicao com o metodo PUT de um usuario")
+    public void facoARequisicaoComOMetodoPUTDeUmUsuario() {
+        Utils.put(UserMaps.getUsuario(),"user/lucaasemanueel",ContentType.JSON);
     }
 
     @Then("verifico se esta retornando {int} na requisicao da API")
     public void verificoSeEstaRetornandoNaRequisicaoDaAPI(int statusCode) {
         Assert.assertEquals(statusCode, Utils.getResponse().statusCode());
+        System.out.println(Utils.getResponse().jsonPath().get().toString());
     }
 }

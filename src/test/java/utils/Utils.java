@@ -32,4 +32,14 @@ public class Utils {
                 .when().post(endpoint)
                 .thenReturn();
     }
+
+    public static Response put(Object corpo, String endpoint, ContentType type){
+        return response = given()
+                .relaxedHTTPSValidation()
+                .log().all()
+                .contentType(type)
+                .body(corpo)
+                .when().put(endpoint)
+                .thenReturn();
+    }
 }
