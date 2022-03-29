@@ -52,5 +52,10 @@ Feature: Testes de usuarios validos e invalidos
        Then verifico se esta retornando 200 na requisicao da API
 
        Examples:
-         | username | password    |
-         | falhado  | senhaerrada |
+         | username      | password |
+         | lucaasEditado | 1234     |
+
+      @userTest
+      Scenario: deletando usuario existente
+        When faco uma requisicao com o metodo DELETE para um usuario
+        Then verifico se esta retornando 200 na requisicao da API

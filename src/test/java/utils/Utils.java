@@ -54,4 +54,13 @@ public class Utils {
                 .when().get(endpoint)
                 .thenReturn();
     }
+
+    public static Response delete(String endpoint, ContentType type){
+        return response = given()
+                .relaxedHTTPSValidation()
+                .contentType(type)
+                .log().all()
+                .when().delete(endpoint)
+                .thenReturn();
+    }
 }

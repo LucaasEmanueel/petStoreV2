@@ -50,4 +50,9 @@ public class UserSteps {
     public void facoUmaRequisicaoComOMetodoGETParaUmUsuario() {
         Utils.get("user/login",ContentType.JSON,UserMaps.getUsuario());
     }
+
+    @When("faco uma requisicao com o metodo DELETE para um usuario")
+    public void facoUmaRequisicaoComOMetodoDELETEParaUmUsuario() {
+        Utils.delete("user/lucaasEditado",ContentType.JSON);
+    }
 }
