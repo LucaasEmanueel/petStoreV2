@@ -55,4 +55,9 @@ public class UserSteps {
     public void facoUmaRequisicaoComOMetodoDELETEParaUmUsuario() {
         Utils.delete("user/lucaasEditado",ContentType.JSON);
     }
+
+    @When("que faco a requisicao com o metodo POST de um pet")
+    public void queFacoARequisicaoComOMetodoPOSTDeUmPet() {
+        Utils.post(UserMaps.getUsuario(),"store/order",ContentType.JSON);
+    }
 }
