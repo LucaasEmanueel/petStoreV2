@@ -23,7 +23,7 @@ Feature: Testes de usuarios validos e invalidos
       | usern  | <username>  |
       | firstN | <firstName> |
     When que faco a requisicao com o metodo POST de um usuario "invalido"
-    Then verifico se esta retornando 400 na requisicao da API
+    Then verifico se esta retornando 500 na requisicao da API
     Examples:
       | cenario          | id  | username    | firstName    |
       | usuario invalido | abc | testeFailed | LucaasFailed |

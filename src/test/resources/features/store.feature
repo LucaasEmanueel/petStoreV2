@@ -1,5 +1,5 @@
 @PetStore
-Feature: Acessar a Loja  do PetStore
+Feature: Testes de validações de acesso da loja  do PetStore
 
   Scenario Outline: Faça um pedido para um animal de estimacao
     Given que tenho os dados do usuario:
