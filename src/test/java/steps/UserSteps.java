@@ -60,4 +60,14 @@ public class UserSteps {
     public void queFacoARequisicaoComOMetodoPOSTDeUmPet() {
         Utils.post(UserMaps.getUsuario(),"store/order",ContentType.JSON);
     }
+
+    @Given("que tenho o orderId do pet")
+    public void queTenhoOOrderIdDoPet() {
+
+    }
+    @When("faco uma requisicao com o metodo DELETE para o pedido")
+    public void facoUmaRequisicaoComOMetodoDELETEParaOPedido() {
+
+    }
+
 }
