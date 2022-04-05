@@ -61,13 +61,9 @@ public class UserSteps {
         Utils.post(UserMaps.getUsuario(),"store/order",ContentType.JSON);
     }
 
-    @Given("que tenho o orderId do pet")
-    public void queTenhoOOrderIdDoPet() {
-
-    }
-    @When("faco uma requisicao com o metodo DELETE para o pedido")
-    public void facoUmaRequisicaoComOMetodoDELETEParaOPedido() {
-
+    @When("faco uma requisicao com o metodo DELETE para o pedido que tem id {int}")
+    public void facoUmaRequisicaoComOMetodoDELETEParaOPedidoQueTemId(int status) {
+        Utils.delete("store/order/"+status+"",ContentType.JSON);
     }
 
 }
