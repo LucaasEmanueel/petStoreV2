@@ -1,4 +1,4 @@
-@userTest
+@userTest @all
 Feature: Testes de usuarios validos e invalidos
 
   Scenario Outline: Criacao do <cenario>

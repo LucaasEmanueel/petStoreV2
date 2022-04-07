@@ -66,4 +66,13 @@ public class UserSteps {
         Utils.delete("store/order/"+status+"",ContentType.JSON);
     }
 
+    @Given("que tenho os dados do usuario {string}")
+    public void queTenhoOsDadosDoUsuario(String string) {
+
+    }
+    @When("que faco a requisicao com o metodo POST no store do pet")
+    public void queFacoARequisicaoComOMetodoPOSTNoStoreDoPet() {
+
+    }
+
 }

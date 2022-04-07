@@ -1,4 +1,4 @@
-@PetStore
+@storeTest @all
 Feature: Testes de validações de acesso da loja  do PetStore
 
   Scenario Outline: Faça um pedido para um animal de estimacao
