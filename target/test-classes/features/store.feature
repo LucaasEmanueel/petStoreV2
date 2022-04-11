@@ -9,7 +9,7 @@ Feature: Testes de validações de acesso da loja  do PetStore
       | shipDate | <shipDate> |
       | status   | <status>   |
       | complete | <complete> |
-    When que faco a requisicao com o metodo POST de um pet
+    When que faco a requisicao na store com o metodo POST
     When verifico se esta retornando 200 na requisicao da API
 
     Examples:
@@ -17,9 +17,9 @@ Feature: Testes de validações de acesso da loja  do PetStore
       | 70 | 7020  | 1        | 2022-03-30T09:46:33.628Z | placed | true     |
 
     Scenario: Deletando um pedido de um animal
-      When faco uma requisicao com o metodo DELETE para o pedido que tem id 70
+      When faco uma requisicao na store com o metodo DELETE para o pedido que tem id 70
       Then verifico se esta retornando 200 na requisicao da API
 
   Scenario: Deletando um pedido de um animal que não existe
-    When faco uma requisicao com o metodo DELETE para o pedido que tem id 71
+    When faco uma requisicao na store com o metodo DELETE para o pedido que tem id 71
     Then verifico se esta retornando 404 na requisicao da API
