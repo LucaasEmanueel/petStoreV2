@@ -1,0 +1,18 @@
+{
+  "id": 3209302939,
+  "category": {
+    "id": 1,
+    "name": "AFVMRO1203"
+  },
+  "name": "dogLu",
+  "photoUrls": [
+    "string"
+  ],
+  "tags": [
+    {
+      "id": 20042022,
+      "name": "data"
+    }
+  ],
+  "status": "sold"
+}
