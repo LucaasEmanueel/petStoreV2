@@ -24,19 +24,32 @@ public class Utils {
         return baseURI;
     }
 
+    public static String getToken() {
+        return token;
+    }
+
+    public static void setToken(String token) {
+        Utils.token = token;
+    }
+
+    private static String token;
+
 
     public static Response post(Object corpo, String endpoint, ContentType type){
-        return response = given()
+        response = given()
                 .relaxedHTTPSValidation()
                 .log().all()
                 .contentType(type)
                 .body(corpo)
                 .when().post(endpoint)
                 .thenReturn();
+         setToken(response.then().extract().path("data.id"));
+         return response;
+
     }
 
     public static Response put(Object corpo, String endpoint, ContentType type){
-        return response = given()
+         return response = given()
                 .relaxedHTTPSValidation()
                 .log().all()
                 .contentType(type)
@@ -45,16 +58,15 @@ public class Utils {
                 .thenReturn();
     }
 
-    public static Response get(String endpoint, ContentType type, Map<String, Object> params){
+    public static Response get(String endpoint, ContentType type, Map<String, Object> corpo){
         return response = given()
                 .relaxedHTTPSValidation()
                 .contentType(type)
-                .params(params)
+                .params(corpo)
                 .log().all()
                 .when().get(endpoint)
                 .thenReturn();
     }
-
     public static Response delete(String endpoint, ContentType type){
         return response = given()
                 .relaxedHTTPSValidation()

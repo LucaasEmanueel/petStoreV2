@@ -1,6 +1,5 @@
 package steps;
 
-import io.cucumber.java.en.Given;
 import io.cucumber.java.en.When;
 import io.restassured.http.ContentType;
 import maps.UserMaps;
@@ -8,13 +7,14 @@ import utils.Utils;
 
 
 public class UserSteps {
+    public static String responseToken;
 
     @When("que faco a requisicao com o metodo POST de um usuario {string}")
     public void queFacoARequisicaoComOMetodoPOST(String user) {
 
         switch (user){
             case "valido":
-                Utils.post(UserMaps.getUsuario(),"user", ContentType.JSON);
+               Utils.post(UserMaps.getUsuario(),"user", ContentType.JSON);
                 break;
             case "invalido":
                 Utils.post(UserMaps.getUsuarioInvalido(),"user", ContentType.JSON);
