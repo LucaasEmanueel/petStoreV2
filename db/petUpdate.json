@@ -2,16 +2,16 @@
   "id": 3209302939,
   "category": {
     "id": 1,
-    "name": "AFVMRO1203"
+    "name": "Cachorro-vira-lata"
   },
-  "name": "dogLu",
+  "name": "dogLuu",
   "photoUrls": [
     "string"
   ],
   "tags": [
     {
       "id": 20042022,
-      "name": "data"
+      "name": "data/update"
     }
   ],
   "status": "sold"
