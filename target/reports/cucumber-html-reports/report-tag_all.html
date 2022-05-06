@@ -42,7 +42,7 @@ $(document).ready(function() {
 
 
   
-<title>Cucumber Reports (no 1) - Feature: Testes de usuarios validos e invalidos</title>
+<title>Cucumber Reports (no 1) - Tag: @all</title>
 
 </head>
 <body>
@@ -90,7 +90,7 @@ $(document).ready(function() {
 
 <div id="report-lead" class="container-fluid">
   <div class="col-md-10 col-md-offset-1">
-    <h2>Feature Report</h2>
+    <h2>Tag Report</h2>
       </div>
 </div>
 
@@ -109,7 +109,7 @@ $(document).ready(function() {
     <th colspan="2">Features</th>
   </tr>
   <tr>
-    <th>Feature</th>
+    <th>Tag</th>
         <th class="passed">Passed</th>
     <th class="failed">Failed</th>
     <th class="skipped">Skipped</th>
@@ -129,19 +129,19 @@ $(document).ready(function() {
 
         <tbody>
         <tr>
-          <td class="tagname">Testes de usuarios validos e invalidos</td>
-                    <td      class="passed"    >14</td>
+          <td class="tagname">@all</td>
+                    <td      class="passed"    >24</td>
           <td >0</td>
           <td >0</td>
           <td >0</td>
           <td >0</td>
-          <td class="total">14</td>
+          <td class="total">24</td>
 
-          <td  class="passed"    >5</td>
+          <td  class="passed"    >9</td>
           <td >0</td>
-          <td class="total">5</td>
+          <td class="total">9</td>
 
-          <td class="duration" data-value="4844825900">4.844</td>
+          <td class="duration" data-value="10587547600">10.587</td>
           <td class="passed">Passed</td>
         </tr>
         </tbody>
@@ -168,44 +168,31 @@ $(document).ready(function() {
 <div class="container-fluid" id="report">
   <div class="row">
     <div class="col-md-10 col-md-offset-1">
-      <div class="feature">
-        
-<div class="tags indention">
-      <b>Tags:</b>
-           <a href="report-tag_userTest.html">@userTest</a>
-           <a href="report-tag_all.html">@all</a>
-      </div>
+      <div class="elements">
 
-        
-<div class="brief passed">
-  <span class="keyword indention">Feature</span>
-  <span class="name">Testes de usuarios validos e invalidos</span>
-  
-
-  </div>
-
-        <div class="description indention"></div>
-
-        <div class="elements inner-level">
-                      
+                  
 <div class="element">
+      <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_file-src-test-resources-features-pet-feature.html">Testes de valida&ccedil;&atilde;o de acesso ao pet</a>
+    </div>
   
   
 <div class="tags indention">
       <b>Tags:</b>
-           <a href="report-tag_userTest.html">@userTest</a>
+           <a href="report-tag_petTest.html">@petTest</a>
            <a href="report-tag_all.html">@all</a>
       </div>
 
   
-  <span class="lead-duration duration">0.888</span>
+  <span class="lead-duration duration">2.135</span>
 
 
     <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
     
 <div class="brief passed">
-  <span class="keyword indention">Scenario Outline</span>
-  <span class="name">Criacao do usuario valido</span>
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Adicionar um novo pet na loja</span>
   
 
        <i class="chevron fa fa-fw"></i>
@@ -233,6 +220,478 @@ $(document).ready(function() {
   </div>
 
   <div id="steps-2" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">que tenho os dados do usuario da pet</span>
+  
+  <span class="lead-duration duration">0.010</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">que faco a requisicao com o metodo POST no store do pet</span>
+  
+  <span class="lead-duration duration">2.122</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">verifico se esta retornando 200 na requisicao da API</span>
+  
+  <span class="lead-duration duration">0.002</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                  
+<div class="element">
+      <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_file-src-test-resources-features-store-feature.html">Testes de valida&ccedil;&otilde;es de acesso da loja  do PetStore</a>
+    </div>
+  
+  
+<div class="tags indention">
+      <b>Tags:</b>
+           <a href="report-tag_storeTest.html">@storeTest</a>
+           <a href="report-tag_all.html">@all</a>
+      </div>
+
+  
+  <span class="lead-duration duration">1.265</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-3">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Fa&ccedil;a um pedido para um animal de estimacao</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-3" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-4">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-4" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">que tenho os dados do usuario:</span>
+  
+  <span class="lead-duration duration">0.013</span>
+
+  </div>
+
+        
+
+
+                  <table class="step-arguments">
+                          <tr>
+                                  <td>id</td>
+                                  <td>70</td>
+                              </tr>
+                          <tr>
+                                  <td>petId</td>
+                                  <td>7020</td>
+                              </tr>
+                          <tr>
+                                  <td>quantity</td>
+                                  <td>1</td>
+                              </tr>
+                          <tr>
+                                  <td>shipDate</td>
+                                  <td>2022-03-30T09:46:33.628Z</td>
+                              </tr>
+                          <tr>
+                                  <td>status</td>
+                                  <td>placed</td>
+                              </tr>
+                          <tr>
+                                  <td>complete</td>
+                                  <td>true</td>
+                              </tr>
+                      </table>
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">que faco a requisicao na store com o metodo POST</span>
+  
+  <span class="lead-duration duration">1.251</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">verifico se esta retornando 200 na requisicao da API</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                  
+<div class="element">
+      <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_file-src-test-resources-features-store-feature.html">Testes de valida&ccedil;&otilde;es de acesso da loja  do PetStore</a>
+    </div>
+  
+  
+<div class="tags indention">
+      <b>Tags:</b>
+           <a href="report-tag_storeTest.html">@storeTest</a>
+           <a href="report-tag_all.html">@all</a>
+      </div>
+
+  
+  <span class="lead-duration duration">1.326</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-5">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Deletando um pedido de um animal</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-5" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-6">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-6" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">faco uma requisicao na store com o metodo DELETE para o pedido que tem id 70</span>
+  
+  <span class="lead-duration duration">1.311</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">verifico se esta retornando 200 na requisicao da API</span>
+  
+  <span class="lead-duration duration">0.015</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                  
+<div class="element">
+      <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_file-src-test-resources-features-store-feature.html">Testes de valida&ccedil;&otilde;es de acesso da loja  do PetStore</a>
+    </div>
+  
+  
+<div class="tags indention">
+      <b>Tags:</b>
+           <a href="report-tag_storeTest.html">@storeTest</a>
+           <a href="report-tag_all.html">@all</a>
+      </div>
+
+  
+  <span class="lead-duration duration">1.015</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-7">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Deletando um pedido de um animal que n&atilde;o existe</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-7" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-8">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-8" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">faco uma requisicao na store com o metodo DELETE para o pedido que tem id 71</span>
+  
+  <span class="lead-duration duration">1.015</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">verifico se esta retornando 404 na requisicao da API</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                  
+<div class="element">
+      <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_file-src-test-resources-features-user-feature.html">Testes de usuarios validos e invalidos</a>
+    </div>
+  
+  
+<div class="tags indention">
+      <b>Tags:</b>
+           <a href="report-tag_userTest.html">@userTest</a>
+           <a href="report-tag_all.html">@all</a>
+      </div>
+
+  
+  <span class="lead-duration duration">0.888</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-9">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Criacao do usuario valido</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-9" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-10">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-10" class="inner-level collapse collapsable-details ">
           <div class="step">
         
 <div class="brief passed">
@@ -339,8 +798,12 @@ $(document).ready(function() {
   </div>
 </div>
 
-                      
+                  
 <div class="element">
+      <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_file-src-test-resources-features-user-feature.html">Testes de usuarios validos e invalidos</a>
+    </div>
   
   
 <div class="tags indention">
@@ -353,7 +816,7 @@ $(document).ready(function() {
   <span class="lead-duration duration">1.121</span>
 
 
-    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-3">
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-11">
     
 <div class="brief passed">
   <span class="keyword indention">Scenario Outline</span>
@@ -366,13 +829,13 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-3" class="collapse collapsable-details ">
+  <div id="element-11" class="collapse collapsable-details ">
     
 
 
     
 <div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-4">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-12">
     
 <div class="brief passed">
   <span class="keyword indention">Steps</span>
@@ -384,7 +847,7 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-4" class="inner-level collapse collapsable-details ">
+  <div id="steps-12" class="inner-level collapse collapsable-details ">
           <div class="step">
         
 <div class="brief passed">
@@ -471,8 +934,12 @@ $(document).ready(function() {
   </div>
 </div>
 
-                      
+                  
 <div class="element">
+      <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_file-src-test-resources-features-user-feature.html">Testes de usuarios validos e invalidos</a>
+    </div>
   
   
 <div class="tags indention">
@@ -485,7 +952,7 @@ $(document).ready(function() {
   <span class="lead-duration duration">0.911</span>
 
 
-    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-5">
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-13">
     
 <div class="brief passed">
   <span class="keyword indention">Scenario Outline</span>
@@ -498,13 +965,13 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-5" class="collapse collapsable-details ">
+  <div id="element-13" class="collapse collapsable-details ">
     
 
 
     
 <div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-6">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-14">
     
 <div class="brief passed">
   <span class="keyword indention">Steps</span>
@@ -516,7 +983,7 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-6" class="inner-level collapse collapsable-details ">
+  <div id="steps-14" class="inner-level collapse collapsable-details ">
           <div class="step">
         
 <div class="brief passed">
@@ -623,8 +1090,12 @@ $(document).ready(function() {
   </div>
 </div>
 
-                      
+                  
 <div class="element">
+      <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_file-src-test-resources-features-user-feature.html">Testes de usuarios validos e invalidos</a>
+    </div>
   
   
 <div class="tags indention">
@@ -637,7 +1108,7 @@ $(document).ready(function() {
   <span class="lead-duration duration">1.018</span>
 
 
-    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-7">
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-15">
     
 <div class="brief passed">
   <span class="keyword indention">Scenario Outline</span>
@@ -650,13 +1121,13 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-7" class="collapse collapsable-details ">
+  <div id="element-15" class="collapse collapsable-details ">
     
 
 
     
 <div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-8">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-16">
     
 <div class="brief passed">
   <span class="keyword indention">Steps</span>
@@ -668,7 +1139,7 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-8" class="inner-level collapse collapsable-details ">
+  <div id="steps-16" class="inner-level collapse collapsable-details ">
           <div class="step">
         
 <div class="brief passed">
@@ -751,8 +1222,12 @@ $(document).ready(function() {
   </div>
 </div>
 
-                      
+                  
 <div class="element">
+      <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_file-src-test-resources-features-user-feature.html">Testes de usuarios validos e invalidos</a>
+    </div>
   
   
 <div class="tags indention">
@@ -765,7 +1240,7 @@ $(document).ready(function() {
   <span class="lead-duration duration">0.904</span>
 
 
-    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-9">
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-17">
     
 <div class="brief passed">
   <span class="keyword indention">Scenario</span>
@@ -778,13 +1253,13 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-9" class="collapse collapsable-details ">
+  <div id="element-17" class="collapse collapsable-details ">
     
 
 
     
 <div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-10">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-18">
     
 <div class="brief passed">
   <span class="keyword indention">Steps</span>
@@ -796,7 +1271,7 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-10" class="inner-level collapse collapsable-details ">
+  <div id="steps-18" class="inner-level collapse collapsable-details ">
           <div class="step">
         
 <div class="brief passed">
@@ -848,8 +1323,7 @@ $(document).ready(function() {
   </div>
 </div>
 
-                  </div>
-
+        
       </div>
     </div>
   </div>

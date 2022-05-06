@@ -49,28 +49,28 @@ $(document).ready(function() {
   $(document).ready(function() {
 
     var chartData = {
-        labels:  [ "@PetStore",  "@userTest", ] ,
+        labels:  [ "@all",  "@petTest",  "@storeTest",  "@userTest", ] ,
         datasets: [
             {
                 label: "Passed",
                 backgroundColor: "#92DD96",
-                data:  [ 100.00,  100.00, ]             },
+                data:  [ 100.00,  100.00,  100.00,  100.00, ]             },
             {
                 label: "Failed",
                 backgroundColor: "#F2928C",
-                data:  [ 0.00,  0.00, ]             },
+                data:  [ 0.00,  0.00,  0.00,  0.00, ]             },
             {
                 label: "Skipped",
                 backgroundColor: "#8AF",
-                data:  [ 0.00,  0.00, ]             },
+                data:  [ 0.00,  0.00,  0.00,  0.00, ]             },
             {
                 label: "Pending",
                 backgroundColor: "#F5F28F",
-                data:  [ 0.00,  0.00, ]             },
+                data:  [ 0.00,  0.00,  0.00,  0.00, ]             },
             {
                 label: "Undefined",
                 backgroundColor: "#F5B975",
-                data:  [ 0.00,  0.00, ]             }
+                data:  [ 0.00,  0.00,  0.00,  0.00, ]             }
         ]
     };
 
@@ -131,7 +131,7 @@ $(document).ready(function() {
     <tr class="info">
       <td>petStoreV2 - System Testing Execution Report</td>
               <td>1</td>
-            <td>31 mar 2022, 07:02</td>
+            <td>06 mai 2022, 14:20</td>
     </tr>
   </tbody>
 </table>
@@ -193,7 +193,24 @@ $(document).ready(function() {
 
   <tbody>
           <tr>
-        <td class="tagname"><a href="report-tag_PetStore.html">@PetStore</a></td>
+        <td class="tagname"><a href="report-tag_all.html">@all</a></td>
+        
+        <td      class="passed"    >24</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">24</td>
+
+        <td  class="passed"    >9</td>
+        <td >0</td>
+        <td class="total">9</td>
+
+        <td class="duration" data-value="10587547600">10.587</td>
+        <td class="passed">Passed</td>
+      </tr>
+          <tr>
+        <td class="tagname"><a href="report-tag_petTest.html">@petTest</a></td>
         
         <td      class="passed"    >3</td>
         <td >0</td>
@@ -206,7 +223,24 @@ $(document).ready(function() {
         <td >0</td>
         <td class="total">1</td>
 
-        <td class="duration" data-value="2098400200">2.098</td>
+        <td class="duration" data-value="2135479100">2.135</td>
+        <td class="passed">Passed</td>
+      </tr>
+          <tr>
+        <td class="tagname"><a href="report-tag_storeTest.html">@storeTest</a></td>
+        
+        <td      class="passed"    >7</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">7</td>
+
+        <td  class="passed"    >3</td>
+        <td >0</td>
+        <td class="total">3</td>
+
+        <td class="duration" data-value="3607242600">3.607</td>
         <td class="passed">Passed</td>
       </tr>
           <tr>
@@ -223,7 +257,7 @@ $(document).ready(function() {
         <td >0</td>
         <td class="total">5</td>
 
-        <td class="duration" data-value="4143698100">4.143</td>
+        <td class="duration" data-value="4844825900">4.844</td>
         <td class="passed">Passed</td>
       </tr>
       </tbody>
@@ -231,19 +265,19 @@ $(document).ready(function() {
   <tfoot class="total">
     <tr>
       <td></td>
-            <td>17</td>
+            <td>48</td>
       <td>0</td>
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>17</td>
+      <td>48</td>
 
-      <td>6</td>
+      <td>18</td>
       <td>0</td>
-      <td>6</td>
+      <td>18</td>
 
-      <td class="duration">6.242</td>
-      <td>2</td>
+      <td class="duration">21.175</td>
+      <td>4</td>
     </tr>
     <tr>
       <td></td>
