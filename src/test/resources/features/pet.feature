@@ -1,5 +1,5 @@
 @petTest @all
-  Feature: Testes de validação do pet
+  Feature: Testes de validação do PET
 
     Scenario: ADICIONAR um novo pet na loja
       Given que tenho os dados do usuario da pet

@@ -1,5 +1,5 @@
 @userTest @all
-Feature: Testes de usuarios validos e invalidos
+Feature: Testes de validação do USUARIOS
 
   Scenario Outline: Criacao do <cenario>
     Given que tenho os dados do usuario:
