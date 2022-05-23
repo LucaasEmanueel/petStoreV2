@@ -42,7 +42,7 @@ $(document).ready(function() {
 
 
   
-<title>Cucumber Reports (no 1) - Feature: Testes de valida&amp;ccedil;&amp;otilde;es de acesso da loja  do PetStore</title>
+<title>Cucumber Reports (no 1) - Feature: Testes de valida&amp;ccedil;&amp;atilde;o da LOJA</title>
 
 </head>
 <body>
@@ -77,7 +77,7 @@ $(document).ready(function() {
     <tr class="info">
       <td>petStoreV2 - System Testing Execution Report</td>
               <td>1</td>
-            <td>06 mai 2022, 17:03</td>
+            <td>23 mai 2022, 20:31</td>
     </tr>
   </tbody>
 </table>
@@ -129,19 +129,19 @@ $(document).ready(function() {
 
         <tbody>
         <tr>
-          <td class="tagname">Testes de valida&ccedil;&otilde;es de acesso da loja  do PetStore</td>
-                    <td      class="passed"    >7</td>
+          <td class="tagname">Testes de valida&ccedil;&atilde;o da LOJA</td>
+                    <td      class="passed"    >11</td>
           <td >0</td>
           <td >0</td>
           <td >0</td>
           <td >0</td>
-          <td class="total">7</td>
+          <td class="total">11</td>
 
-          <td  class="passed"    >3</td>
+          <td  class="passed"    >5</td>
           <td >0</td>
-          <td class="total">3</td>
+          <td class="total">5</td>
 
-          <td class="duration" data-value="2358060000">2.358</td>
+          <td class="duration" data-value="8637696900">8.637</td>
           <td class="passed">Passed</td>
         </tr>
         </tbody>
@@ -179,7 +179,7 @@ $(document).ready(function() {
         
 <div class="brief passed">
   <span class="keyword indention">Feature</span>
-  <span class="name">Testes de valida&ccedil;&otilde;es de acesso da loja  do PetStore</span>
+  <span class="name">Testes de valida&ccedil;&atilde;o da LOJA</span>
   
 
   </div>
@@ -198,14 +198,14 @@ $(document).ready(function() {
       </div>
 
   
-  <span class="lead-duration duration">0.831</span>
+  <span class="lead-duration duration">1.642</span>
 
 
     <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
     
 <div class="brief passed">
   <span class="keyword indention">Scenario Outline</span>
-  <span class="name">Fa&ccedil;a um pedido para um animal de estimacao</span>
+  <span class="name">Realizando um pedido de um animal de estimacao</span>
   
 
        <i class="chevron fa fa-fw"></i>
@@ -239,7 +239,7 @@ $(document).ready(function() {
   <span class="keyword indention">Given</span>
   <span class="name">que tenho os dados do usuario:</span>
   
-  <span class="lead-duration duration">0.003</span>
+  <span class="lead-duration duration">0.009</span>
 
   </div>
 
@@ -261,7 +261,7 @@ $(document).ready(function() {
                               </tr>
                           <tr>
                                   <td>shipDate</td>
-                                  <td>2022-03-30T09:46:33.628Z</td>
+                                  <td>2022-03-30</td>
                               </tr>
                           <tr>
                                   <td>status</td>
@@ -286,7 +286,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">que faco a requisicao na store com o metodo POST</span>
   
-  <span class="lead-duration duration">0.827</span>
+  <span class="lead-duration duration">1.632</span>
 
   </div>
 
@@ -342,14 +342,14 @@ $(document).ready(function() {
       </div>
 
   
-  <span class="lead-duration duration">0.593</span>
+  <span class="lead-duration duration">1.498</span>
 
 
     <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-3">
     
 <div class="brief passed">
   <span class="keyword indention">Scenario</span>
-  <span class="name">Deletando um pedido de um animal</span>
+  <span class="name">Localizar pedido de compra por id</span>
   
 
        <i class="chevron fa fa-fw"></i>
@@ -381,9 +381,9 @@ $(document).ready(function() {
         
 <div class="brief passed">
   <span class="keyword indention">When</span>
-  <span class="name">faco uma requisicao na store com o metodo DELETE para o pedido que tem id 70</span>
+  <span class="name">faco uma requisicao com o metodo GET para o pedido que tem id 70</span>
   
-  <span class="lead-duration duration">0.593</span>
+  <span class="lead-duration duration">1.498</span>
 
   </div>
 
@@ -439,14 +439,14 @@ $(document).ready(function() {
       </div>
 
   
-  <span class="lead-duration duration">0.932</span>
+  <span class="lead-duration duration">3.249</span>
 
 
     <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-5">
     
 <div class="brief passed">
   <span class="keyword indention">Scenario</span>
-  <span class="name">Deletando um pedido de um animal que n&atilde;o existe</span>
+  <span class="name">Retornar um mapa com o status de quantidade de cada pet</span>
   
 
        <i class="chevron fa fa-fw"></i>
@@ -478,9 +478,203 @@ $(document).ready(function() {
         
 <div class="brief passed">
   <span class="keyword indention">When</span>
+  <span class="name">faco uma requisicao com o metodo GET para todos os pedidos</span>
+  
+  <span class="lead-duration duration">3.249</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">verifico se esta retornando 200 na requisicao da API</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+      <b>Tags:</b>
+           <a href="report-tag_storeTest.html">@storeTest</a>
+           <a href="report-tag_all.html">@all</a>
+      </div>
+
+  
+  <span class="lead-duration duration">1.213</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-7">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Deletando um pedido de um animal por id</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-7" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-8">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-8" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">faco uma requisicao na store com o metodo DELETE para o pedido que tem id 70</span>
+  
+  <span class="lead-duration duration">1.201</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">verifico se esta retornando 200 na requisicao da API</span>
+  
+  <span class="lead-duration duration">0.012</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+      <b>Tags:</b>
+           <a href="report-tag_storeTest.html">@storeTest</a>
+           <a href="report-tag_all.html">@all</a>
+      </div>
+
+  
+  <span class="lead-duration duration">1.033</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-9">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Deletando um pedido de um animal que n&atilde;o existe</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-9" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-10">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-10" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
   <span class="name">faco uma requisicao na store com o metodo DELETE para o pedido que tem id 71</span>
   
-  <span class="lead-duration duration">0.932</span>
+  <span class="lead-duration duration">1.033</span>
 
   </div>
 

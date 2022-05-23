@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="runner.RunnerTest" time="10.969" tests="12" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="runner.RunnerTest" time="25.645" tests="14" errors="0" skipped="0" failures="0">
   <properties>
     <property name="idea.version" value="2021.3.2"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
@@ -63,16 +63,18 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="ADICIONAR um novo pet na loja" classname="Testes de validação do pet" time="2.047"/>
-  <testcase name="EDITAR um novo pet na loja" classname="Testes de validação do pet" time="0.624"/>
-  <testcase name="PROCURAR pet na loja por Status" classname="Testes de validação do pet" time="0.643"/>
-  <testcase name="DELETAR um pet na loja" classname="Testes de validação do pet" time="0.628"/>
-  <testcase name="Faça um pedido para um animal de estimacao" classname="Testes de validações de acesso da loja  do PetStore" time="0.864"/>
-  <testcase name="Deletando um pedido de um animal" classname="Testes de validações de acesso da loja  do PetStore" time="0.601"/>
-  <testcase name="Deletando um pedido de um animal que não existe" classname="Testes de validações de acesso da loja  do PetStore" time="0.943"/>
-  <testcase name="Criacao do usuario valido" classname="Testes de usuarios validos e invalidos" time="0.679"/>
-  <testcase name="Criacao do usuario invalido" classname="Testes de usuarios validos e invalidos" time="0.624"/>
-  <testcase name="Atualizar um usuario ja cadastrado" classname="Testes de usuarios validos e invalidos" time="0.602"/>
-  <testcase name="logando usuario valido" classname="Testes de usuarios validos e invalidos" time="0.609"/>
-  <testcase name="deletando usuario existente" classname="Testes de usuarios validos e invalidos" time="0.895"/>
+  <testcase name="ADICIONAR um novo pet na loja" classname="Testes de validação do PET" time="3.827"/>
+  <testcase name="EDITAR um novo pet na loja" classname="Testes de validação do PET" time="1.632"/>
+  <testcase name="PROCURAR pet na loja por Status" classname="Testes de validação do PET" time="1.332"/>
+  <testcase name="DELETAR um pet na loja" classname="Testes de validação do PET" time="1.225"/>
+  <testcase name="Realizando um pedido de um animal de estimacao" classname="Testes de validação da LOJA" time="1.673"/>
+  <testcase name="Localizar pedido de compra por id" classname="Testes de validação da LOJA" time="1.507"/>
+  <testcase name="Retornar um mapa com o status de quantidade de cada pet" classname="Testes de validação da LOJA" time="3.262"/>
+  <testcase name="Deletando um pedido de um animal por id" classname="Testes de validação da LOJA" time="1.228"/>
+  <testcase name="Deletando um pedido de um animal que não existe" classname="Testes de validação da LOJA" time="1.043"/>
+  <testcase name="Criacao do usuario valido" classname="Testes de validação do USUARIOS" time="1.029"/>
+  <testcase name="Criacao do usuario invalido" classname="Testes de validação do USUARIOS" time="1.428"/>
+  <testcase name="Atualizar um usuario ja cadastrado" classname="Testes de validação do USUARIOS" time="1.221"/>
+  <testcase name="logando usuario valido" classname="Testes de validação do USUARIOS" time="1.331"/>
+  <testcase name="deletando usuario existente" classname="Testes de validação do USUARIOS" time="1.454"/>
 </testsuite>
